@@ -1,0 +1,127 @@
+.about-content {
+  font-family: var(--font-comfortaa), sans-serif;
+}
+
+.about-content p {
+  margin-bottom: 2rem !important;
+  margin-top: 0 !important;
+  color: #e5e7eb;
+  line-height: 1.6;
+  font-family: var(--font-comfortaa), sans-serif;
+  font-size: 1.125rem !important;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0 !important;
+}
+
+.about-content h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-family: var(--font-comfortaa), sans-serif;
+}
+
+.about-content h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+  font-family: var(--font-comfortaa), sans-serif;
+}
+
+.about-content h3 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.625rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  font-family: var(--font-comfortaa), sans-serif;
+}
+
+.about-content h4 {
+  color: white;
+  font-weight: bold;
+  font-size: 1.375rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  font-family: var(--font-comfortaa), sans-serif;
+}
+
+.about-content ul {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.about-content li {
+  color: #e5e7eb;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.about-content ol {
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+}
+
+.about-content blockquote {
+  border-left: 4px solid #3b82f6;
+  padding-left: 1.5rem;
+  margin: 2rem 0;
+  font-style: italic;
+  color: #d1d5db;
+}
+
+.about-content code {
+  background-color: #374151;
+  color: #f3f4f6;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+}
+
+.about-content pre {
+  background-color: #1f2937;
+  color: #f3f4f6;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+.about-content pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.about-content hr {
+  border: none;
+  height: 1px;
+  background-color: #374151;
+  margin: 3rem 0;
+}
+
+.about-content a {
+  color: #3b82f6;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.about-content a:hover {
+  color: #60a5fa;
+}
+
+.about-content strong {
+  color: white;
+  font-weight: bold;
+}
+
+.about-content em {
+  color: #d1d5db;
+  font-style: italic;
+}
