@@ -5,7 +5,7 @@ import SlowLoading from './SlowLoading';
 
 interface PageWithLoadingProps {
   children: ReactNode;
-  loadingMessage: string;
+  loadingMessage?: string;
   minLoadingTime: number;
 }
 

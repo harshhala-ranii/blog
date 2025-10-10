@@ -14,7 +14,7 @@ export default function Reviews() {
           </h1>
           <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed">
             Honest thoughts, detailed analysis, and personal experiences. 
-            From books to coffee shops, here's what I really think.
+            From books to coffee shops, here&apos;s what I really think.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export default function Reviews() {
             </div>
             <h3 className="text-2xl font-bold text-white mb-4">No Reviews Yet</h3>
             <p className="text-gray-400 text-lg mb-8">
-              I'm working on some great reviews. Check back soon!
+              I&apos;m working on some great reviews. Check back soon!
             </p>
             <div className="inline-flex items-center px-6 py-3 bg-gray-900 border border-gray-800 text-white rounded-lg">
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -61,7 +61,7 @@ export default function Reviews() {
                 Want to suggest a review?
               </h3>
               <p className="text-gray-400 mb-6">
-                Have something you'd like me to review? I'm always looking for new experiences to share.
+                Have something you&apos;d like me to review? I&apos;m always looking for new experiences to share.
               </p>
               <a 
                 href="/about" 

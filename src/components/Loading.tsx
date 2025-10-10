@@ -25,7 +25,7 @@ export default function Loading({ message }: LoadingProps) {
     }, 4000); // Changed from 2000ms to 4000ms (4 seconds)
 
     return () => clearInterval(interval);
-  }, []);
+  }, [loadingMessages.length]);
 
   return (
     <div className="min-h-screen bg-black flex items-center justify-center">

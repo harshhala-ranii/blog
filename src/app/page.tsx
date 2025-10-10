@@ -1,6 +1,7 @@
 'use client';
 
 import PageWithLoading from '../components/PageWithLoading';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -42,18 +43,18 @@ export default function Home() {
 
           {/* Call to Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a 
+            <Link 
               href="/blogs"
               className="border-2 border-white text-white px-6 py-2 rounded-full font-semibold text-base hover:bg-white hover:text-black hover:text-lg transition-all duration-300 transform hover:scale-105"
             >
               Read Latest Posts
-            </a>
-            <a 
+            </Link>
+            <Link 
               href="/about"
               className="border-2 border-white text-white px-6 py-2 rounded-full font-semibold text-base hover:bg-white hover:text-black hover:text-lg transition-all duration-300 transform hover:scale-105"
             >
               Learn More
-            </a>
+            </Link>
           </div>
 
         </div>

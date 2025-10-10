@@ -17,7 +17,7 @@ export interface BlogPost {
   contentHtml: string;
 }
 
-export function getSortedBlogsData(): BlogPost[] {
+export function getSortedBlogsData(): Omit<BlogPost, 'content' | 'contentHtml'>[] {
   // Get file names under /content/blogs
   const fileNames = fs.readdirSync(blogsDirectory);
   const allBlogsData = fileNames
@@ -70,7 +70,7 @@ export async function getBlogData(slug: string): Promise<BlogPost> {
   
   // Replace highlight syntax with HTML placeholders
   processedContent = processedContent.replace(
-    />!highlight!<(.*?)>!highlight!</gs, 
+    />!highlight!<(.*?)>!highlight!</g, 
     '<span class="highlight-placeholder">$1</span>'
   );
 

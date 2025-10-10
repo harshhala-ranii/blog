@@ -34,7 +34,7 @@ export default function SlowLoading({ message, minLoadingTime = 3000 }: SlowLoad
     }, 1000); // 1.5 seconds per message - fast rotation
 
     return () => clearInterval(interval);
-  }, []);
+  }, [loadingMessages.length]);
 
   if (!isLoading) {
     return null; // This will be replaced by the actual content

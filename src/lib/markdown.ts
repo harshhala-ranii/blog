@@ -17,7 +17,7 @@ export interface ReviewPost {
   contentHtml: string;
 }
 
-export function getSortedReviewsData(): ReviewPost[] {
+export function getSortedReviewsData(): Omit<ReviewPost, 'content' | 'contentHtml'>[] {
   // Get file names under /content/reviews
   const fileNames = fs.readdirSync(reviewsDirectory);
   const allReviewsData = fileNames

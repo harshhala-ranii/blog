@@ -7,10 +7,6 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "db:setup": "./scripts/setup-db.sh",
-    "db:start": "docker-compose up -d postgres",
-    "db:stop": "docker-compose down",
-    "db:reset": "docker-compose down -v && docker-compose up -d postgres",
     "db:migrate": "npx prisma migrate dev",
     "db:generate": "npx prisma generate",
     "db:studio": "npx prisma studio"
