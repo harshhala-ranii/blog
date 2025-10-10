@@ -9,7 +9,13 @@
     "lint": "eslint",
     "db:migrate": "npx prisma migrate dev",
     "db:generate": "npx prisma generate",
-    "db:studio": "npx prisma studio"
+    "db:studio": "npx prisma studio",
+    "docker:setup": "./scripts/docker-setup.sh",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:build": "docker-compose build --no-cache",
+    "docker:restart": "docker-compose restart"
   },
   "dependencies": {
     "@prisma/client": "^6.17.0",
