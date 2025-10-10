@@ -8,8 +8,8 @@ services:
       POSTGRES_DB: blog_db
       POSTGRES_USER: blog_user
       POSTGRES_PASSWORD: blog_password
-    ports:
-      - "5432:5432"
+    # ports:
+      # - "5432:5432"  # Database not exposed externally for security
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
@@ -28,9 +28,9 @@ services:
     environment:
       - NODE_ENV=production
       - DATABASE_URL=postgresql://blog_user:blog_password@postgres:5432/blog_db
-      - NEXT_PUBLIC_SITE_URL=http://localhost:3000
+      - NEXT_PUBLIC_SITE_URL=http://localhost:3035
     ports:
-      - "3000:3000"
+      - "3035:3000"
     depends_on:
       postgres:
         condition: service_healthy
