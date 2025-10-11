@@ -22,7 +22,7 @@ services:
 
   # Blog Application
   blog:
-    build: .
+    image: ghcr.io/harshhala-ranii/blog-app:latest  
     container_name: blog-app
     restart: unless-stopped
     environment:

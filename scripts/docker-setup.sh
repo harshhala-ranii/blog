@@ -1,12 +1,17 @@
 #!/bin/bash
 
+# Docker Setup Script for Blog
+# This script pulls the pre-built Docker image and starts the services
+# Make sure to build and push the image first using scripts/build-and-push.sh
+
 echo "🐳 Starting Blog with Docker Compose..."
 
 # Stop any existing containers
 docker-compose down
 
-# Remove old images to ensure fresh build
-docker-compose build --no-cache
+# Pull the latest pre-built image
+echo "📥 Pulling latest blog image..."
+docker-compose pull blog
 
 # Start the services
 docker-compose up -d postgres
