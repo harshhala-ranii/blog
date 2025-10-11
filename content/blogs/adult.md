@@ -2,7 +2,7 @@
 title: "Adulting 101"
 date: "2025-10-11"
 description: "No offense, but growing up is a trap indeed!"
-image: "/images/adult.jpg"
+image: "/images/adult.JPG"
 ---
 
 # Adulting 101

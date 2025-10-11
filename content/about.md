@@ -2,7 +2,7 @@
 title: "About No Offense,But"
 date: "2024-01-01"
 description: "No offense, but this is basically my diary I left unlocked on the internet."
-image: "/images/about-hero.jpg"
+image: "/images/about-hero.JPG"
 ---
 
 ## Author’s Note
