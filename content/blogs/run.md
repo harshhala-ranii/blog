@@ -3,7 +3,7 @@ title: "Running Away, Literally"
 date: "2025-10-31"
 description: "
 No offense, but running is the only chaos that actually calms my brain."
-image: "/images/run.JPG"
+image: "/images/run.jpg"
 ---
 
 Sometimes, all I need is to get away into the mountains or somewhere close to nature to find peace. But that’s not possible every day when you have office, college, and other priorities. You can’t just text your boss, *“Hey, I’m off to the Himalayas for mental peace.”*

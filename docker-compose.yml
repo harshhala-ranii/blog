@@ -39,8 +39,8 @@ services:
     volumes:
       # Mount your content directory for easy updates
       - ./content:/app/content:ro
-      # Images are included in the Docker image, no need to mount them
-      # - ./public/images:/app/public/images:ro
+      # Mount images to ensure new assets are served without rebuild
+      - ./public/images:/app/public/images:ro
 
   # pgAdmin (Optional - for database management)
   pgadmin:
