@@ -13,6 +13,7 @@ export interface ReviewPost {
   date: string;
   description: string;
   image: string;
+  category?: string;
   content: string;
   contentHtml: string;
 }
@@ -86,4 +87,38 @@ export function getReviewSlugs(): string[] {
   return fileNames
     .filter((fileName) => fileName.endsWith('.md') && fileName.toLowerCase() !== 'readme.md')
     .map((fileName) => fileName.replace(/\.md$/, ''));
+}
+
+// Categories helpers
+export function getReviewCategories(): string[] {
+  const fileNames = fs.readdirSync(reviewsDirectory);
+  const categories = new Set<string>();
+  fileNames
+    .filter((fileName) => fileName.endsWith('.md') && fileName.toLowerCase() !== 'readme.md')
+    .forEach((fileName) => {
+      const fullPath = path.join(reviewsDirectory, fileName);
+      const fileContents = fs.readFileSync(fullPath, 'utf8');
+      const matterResult = matter(fileContents);
+      const category = (matterResult.data?.category as string) || 'Uncategorized';
+      categories.add(category);
+    });
+  return Array.from(categories).sort((a, b) => a.localeCompare(b));
+}
+
+export function getReviewsByCategory(): Record<string, Omit<ReviewPost, 'content' | 'contentHtml'>[]> {
+  const reviews = getSortedReviewsData();
+  return reviews.reduce<Record<string, Omit<ReviewPost, 'content' | 'contentHtml'>[]>>((acc, review) => {
+    const category = review.category ?? 'Uncategorized';
+    if (!acc[category]) acc[category] = [];
+    acc[category].push(review);
+    return acc;
+  }, {});
+}
+
+export function getSortedReviewsDataByCategory(category: string): Omit<ReviewPost, 'content' | 'contentHtml'>[] {
+  const normalized = category.toLowerCase();
+  return getSortedReviewsData().filter((r) => {
+    const c = r.category ?? 'Uncategorized';
+    return c.toLowerCase() === normalized;
+  });
 }

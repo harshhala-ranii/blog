@@ -6,7 +6,15 @@ export interface LikeData {
   totalVotes: number;
 }
 
+function isDbConfigured(): boolean {
+  return Boolean(process.env.DATABASE_URL);
+}
+
 export async function getBlogLikes(slug: string): Promise<LikeData> {
+  // Short-circuit if database isn't configured/running
+  if (!isDbConfigured()) {
+    return { likes: 0, dislikes: 0, totalVotes: 0 };
+  }
   try {
     const blogLike = await db.blogLike.findUnique({
       where: { slug },
@@ -41,6 +49,10 @@ export async function getBlogLikes(slug: string): Promise<LikeData> {
 }
 
 export async function updateBlogLikes(slug: string, type: 'like' | 'dislike'): Promise<LikeData> {
+  // Short-circuit if database isn't configured/running
+  if (!isDbConfigured()) {
+    return { likes: 0, dislikes: 0, totalVotes: 0 };
+  }
   try {
     // Use upsert to create or update the record
     const blogLike = await db.blogLike.upsert({

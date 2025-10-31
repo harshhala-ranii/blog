@@ -59,6 +59,12 @@ export default function About() {
             </div>
           </article>
 
+          {/* Contact Info */}
+          <div className="mt-10 text-center">
+            <h3 className="text-2xl font-bold text-white mb-2">Get in touch</h3>
+            <p className="text-gray-400">Contact me at <span className="text-white font-semibold">harshalarani3@gmail.com</span></p>
+          </div>
+
           {/* Back to Home */}
           <div className="mt-16 pt-8 border-t border-gray-800">
             <Link 

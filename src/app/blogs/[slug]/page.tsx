@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import BlogContent from '../../../components/BlogContent';
 import LikeDislike from '../../../components/LikeDislike';
+import Share from '../../../components/Share';
 import PageWithLoading from '../../../components/PageWithLoading';
 import './blog-content.css';
 
@@ -107,6 +108,9 @@ export default async function BlogPage({ params }: BlogPageProps) {
               initialDislikes={likesData.dislikes}
               initialTotalVotes={likesData.totalVotes}
             />
+
+            {/* Share */}
+            <Share title={blog.title} />
           </div>
         </article>
 
