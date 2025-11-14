@@ -21,7 +21,7 @@ Totally normal.
 
 Comfort in intimacy isn’t instant; it’s like a new pair of jeans \- stiff at first, but gets better as you wear it. As you spend more time with someone, you stop thinking about your breathing pattern and start focusing on… well, the fun stuff.
 
-And here's the twist: what turns you on when you watch porn may not do the same in real life. There are things that look hot, but necessarily hot when you do it with your partner, get this straight,buddy.
+And here's the twist: what turns you on when you watch porn may not do the same in real life. There are things that look hot, but not necessarily hot when you do it with your partner, get this straight,buddy.
 
 Like they say (and your aunties would faint if they heard it), **“Practice makes it less awkward… and eventually, kinda amazing.”**
 
