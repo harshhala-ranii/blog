@@ -2,7 +2,6 @@ import { getBlogData, getAllBlogSlugs } from '../../../lib/blog-markdown';
 import { getBlogLikes } from '../../../lib/likes-server';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 import BlogContent from '../../../components/BlogContent';
 import LikeDislike from '../../../components/LikeDislike';
 import Share from '../../../components/Share';
@@ -74,20 +73,15 @@ export default async function BlogPage({ params }: BlogPageProps) {
             </p>
 
             {/* Featured Image */}
-            <div className={`relative mb-8 ${
-              blog.slug === 'love' 
-                ? 'h-96 md:h-[32rem] w-3/4 mx-auto' 
-                : 'h-64 md:h-96 w-full'
-            }`}>
-              <Image
-                src={blog.image}
-                alt={blog.title}
-                fill
-                className="object-cover rounded-lg"
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-                priority
-              />
-              <div className="absolute inset-0 bg-black/40 rounded-lg"></div>
+            <div className="mb-8 w-full flex justify-center">
+              <div className="relative w-full max-w-full">
+                <img
+                  src={blog.image}
+                  alt={blog.title}
+                  className="rounded-lg w-full h-auto object-contain max-h-[80vh]"
+                  loading="eager"
+                />
+              </div>
             </div>
 
             {/* Divider */}
