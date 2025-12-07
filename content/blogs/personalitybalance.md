@@ -1,6 +1,6 @@
 ---
 title: "The Personality Balance That Changes Everything"
-date: "2025-7-12"
+date: "2025-12-07"
 description: "No offense, but the crowd you attract isn’t as random as you believe."
 image: "/images/balance.png"
 ---

@@ -1,6 +1,6 @@
 ---
 title: "Your 20s Are for Saying Yes to Everything"
-date: "2025-7-12"
+date: "2025-12-07"
 description: "No offense, but your 20s are for experimenting wildly, not pretending you’ve figured it all out."
 image: "/images/jack.png"
 ---
